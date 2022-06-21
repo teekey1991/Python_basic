@@ -1,5 +1,12 @@
-inport random
+"""
+下記のコードが期待通り動作するような、1から6の整数をランダムに出力する dice() 関数を実装してください
+print(dice()) # 1から6の整数をランダムに出力する
+"""
 
-x = random.choice(1,2,3,4,5,6)
+import random
 
-print(dice(x)) # 1から6の整数をランダムに出力する
+def dice():
+   return random.randint(1, 6)
+
+
+print(dice()) # 1から6の整数をランダムに出力する
